@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סודוקו</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧩 סודוקו</h1>
+
+<div class="top">
+  <select id="difficulty">
+    <option value="30">קל</option>
+    <option value="40" selected>בינוני</option>
+    <option value="55">קשה</option>
+  </select>
+
+  <button onclick="newGame()">משחק חדש</button>
+  <button onclick="useHint()">💡 רמז (<span id="hints">3</span>)</button>
+</div>
+
+<div class="info">
+  ⏱ זמן: <span id="timer">00:00</span> |
+  🏆 שיא: <span id="best">--:--</span>
+</div>
+
+<div id="board"></div>
+
+<div id="message"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
